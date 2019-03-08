@@ -1,3 +1,23 @@
+#Reflection 2
+ 
+Look up Table
+*Time complexity for processing O(n^2)
+*n^2 space 
+*Time required to fetch a value 1
+
+Square root Decomposition
+*Processing O(n)
+*Excess time and space Square root of N
+ Can be used only if query access the entire range
+
+Segment Tree 
+*Height of tree logn
+
+If values are static then go for segment Tree technique
+for Dynamic values Look up table method and square root decomposition is preferred
+
+
+Reflecion 1
 ##BIONOMIAL COEFFICIENT 
 It uses two for loops hence 0(N*k) in Dynamic programing and one if condition to get the min(i,k)
 if you use recursive then it becomes more complex
