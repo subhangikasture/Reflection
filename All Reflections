@@ -11,29 +11,39 @@ Square root Decomposition
  Can be used only if query access the entire range
 
 Segment Tree 
-*Height of tree logn
+*Height of tree log(n)
+*size of memory allocated 2*2^[logn]-1
 
+comments:
 If values are static then go for segment Tree technique
 for Dynamic values Look up table method and square root decomposition is preferred
 
 
 Reflecion 1
-##BIONOMIAL COEFFICIENT 
-It uses two for loops hence 0(N*k) in Dynamic programing and one if condition to get the min(i,k)
-if you use recursive then it becomes more complex
-The coeficient is found usig the relation c(n,k)=c(n-1,k-1)+c(n-1,k)
+BINARY COEFFICIENT:
+Three methods were used
+1.Recursive 
+*memory used o(2^n-1)*16
+*time complexity o(n*k)
 
-##PASCAL TRIANGLE
-It can generated with the help of Bionomial Coefficients 
-Using Dynamic programing we need to use two for loops and one if condition
-we can do ot using recursion as well but it is more complex and takes more number of iterations
+2.2D array method
+*memory used n*k
+*time complexity o(n*k)
 
-##CADONES ALGORITHM
-1.Kadones algorithm finds the sum of largest sub array 
-2.two variables are maintained one with temp and other is max
-3.we add element to temp each time if it is less than 0 then we make temp as 0
-4.and if max is lass than temp then make temp as max
-5.step 3 and 4 are repeated n number of times 
-6.max value is returned
+3.1D memory method 
+*space complexity O(k)
+
+
+comments:
+If single query is used then go for recursive 
+If multiple is present 2D array method is good 
+To fetch a single row coefficients 1D method is better
+
+
+
+
+
+
+
 
 
